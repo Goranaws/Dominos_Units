@@ -1,0 +1,20 @@
+## Version: 5
+## Interface: 60100
+## Title: Dominos_Units
+## Author: Goranaws
+## Dependencies: Dominos
+## SavedVariables: Dominos_Units
+## OptionalDeps: LibSharedMedia-3.0
+
+embeds.xml
+
+bar.lua
+		--creates a blank resizable frame
+menu\menu.xml
+		--handles the options menu.
+components\components.xml
+		--select the frame's type and add components.(directions in file)
+slashCommands.lua
+		--lets you add extra slash commands to dominos.(directions in file)
+module.lua
+		--generates your custom frames, and runs any new slashCommands.
