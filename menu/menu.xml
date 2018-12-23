@@ -1,1 +1,0 @@
-<Ui xmlns='http://www.blizzard.com/wow/ui/'>	<Script file='mediaPanel.lua'/>	<Script file='options.lua'/>	<Script file='menuPanel.lua'/>	<Script file='copy.lua'/></Ui>

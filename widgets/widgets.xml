@@ -1,0 +1,29 @@
+<Ui xmlns='http://www.blizzard.com/wow/ui/'>
+	<Script file='widgets.lua'/>
+	
+	<Script file='unit.lua'/>
+
+	<Script file='health.lua'/>
+	<Script file='mana.lua'/>
+	<Script file='power.lua'/>
+	<Script file='cast.lua'/>
+
+	<Script file='name.lua'/>
+	<Script file='level.lua'/>
+	<Script file='threat.lua'/>
+	<Script file='currency.lua'/>
+
+	<Script file='digsite.lua'/>
+	<Script file='icon.lua'/>
+	<Script file='resource.lua'/>
+		
+	<Script file='overlay.lua'/>
+	<Script file='focus.lua'/>
+	<Script file='background.lua'/>
+	
+	<Script file='buff.lua'/>
+	<Script file='debuff.lua'/>
+	
+	<Script file='model.lua'/>
+	<Script file='dropdown.lua'/>	
+</Ui>

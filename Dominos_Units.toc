@@ -1,15 +1,20 @@
-## Version: 3.7
-## Interface: 60100
+## Version: 6.1
+## Interface: 80000
 ## Title: Dominos_Units
 ## Author: Goranaws
-## Dependencies: Dominos
-## SavedVariables: Dominos_Units
-## OptionalDeps: LibSharedMedia-3.0
+## SavedVariables: Dominos_UnitsDB, Dominos_UnitsVersion
+## Dependencies:Dominos
+## OptionalDeps: LibStub, LibUIDropDownMenu, Ace3, LibKeyBound-1.0, LibSharedMedia-3.0, Masque, FlyPaper
 
-embeds.xml
+lib.xml
 
-bar.lua
-menu\menu.xml
-components\components.xml
-slashCommands.lua
-module.lua
+frame.lua
+
+helpers.lua
+profiles.lua
+options.lua
+
+widgets\widgets.xml
+Magnets\Magnets.lua
+
+main.lua
