@@ -15,6 +15,5 @@ profiles.lua
 options.lua
 
 widgets\widgets.xml
-Magnets\Magnets.lua
 
 main.lua

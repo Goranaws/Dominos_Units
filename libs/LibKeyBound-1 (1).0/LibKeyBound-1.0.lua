@@ -53,14 +53,14 @@ function LibKeyBound:Initialize()
 		f:SetClampedToScreen(true)
 		f:SetWidth(360)
 		f:SetHeight(140)
-		f:SetBackdrop{
-			bgFile='Interface\\DialogFrame\\UI-DialogBox-Background' ,
-			edgeFile='Interface\\DialogFrame\\UI-DialogBox-Border',
-			tile = true,
-			insets = {left = 11, right = 12, top = 12, bottom = 11},
-			tileSize = 32,
-			edgeSize = 32,
-		}
+		-- f:SetBackdrop{
+			-- bgFile='Interface\\DialogFrame\\UI-DialogBox-Background' ,
+			-- edgeFile='Interface\\DialogFrame\\UI-DialogBox-Border',
+			-- tile = true,
+			-- insets = {left = 11, right = 12, top = 12, bottom = 11},
+			-- tileSize = 32,
+			-- edgeSize = 32,
+		-- }
 		f:SetPoint('TOP', 0, -24)
 		f:Hide()
 		f:SetScript('OnShow', function() PlaySound('igMainMenuOption') end)
