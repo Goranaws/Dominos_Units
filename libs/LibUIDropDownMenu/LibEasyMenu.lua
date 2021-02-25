@@ -1,4 +1,4 @@
---$Id: LibEasyMenu.lua 25 2017-08-31 14:21:05Z arith $
+
 -- Simplified Menu Display System
 --	This is a basic system for displaying a menu from a structure table.
 --
@@ -14,25 +14,12 @@
 --		autoHideDelay - how long until the menu disappears
 --
 --
--- ----------------------------------------------------------------------------
--- Localized Lua globals.
--- ----------------------------------------------------------------------------
-local _G = getfenv(0)
--- ----------------------------------------------------------------------------
-local MAJOR_VERSION = "LibEasyMenu-1.07.7030024931"
-local MINOR_VERSION = 90000 + tonumber(("$Rev: 25 $"):match("%d+"))
-
-local LibStub = _G.LibStub
-if not LibStub then error(MAJOR_VERSION .. " requires LibStub.") end
-local Lib = LibStub:NewLibrary(MAJOR_VERSION, MINOR_VERSION)
-if not Lib then return end
-
 function L_EasyMenu(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay )
 	if ( displayMode == "MENU" ) then
 		menuFrame.displayMode = displayMode;
 	end
 	L_UIDropDownMenu_Initialize(menuFrame, L_EasyMenu_Initialize, displayMode, nil, menuList);
-	L_ToggleDropDownMenu(1, nil, menuFrame, anchor, x, y, menuList, nil, autoHideDelay);
+	L_CloseDropDownMenus(1, nil, menuFrame, anchor, x, y, menuList, nil, autoHideDelay);
 end
 
 function L_EasyMenu_Initialize( frame, level, menuList )
